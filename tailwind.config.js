@@ -1,15 +1,17 @@
 module.exports = {
   content: ["./dist/index.html"],
   theme: {
-    // fontFamily: {
-    //   'sans': ['Iowan Old Style','Apple Garamond','Baskerville','Times New Roman','Droid Serif, Times','Source Serif Pro','serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'],
-    //   'serif': ['-apple-system','BlinkMacSystemFont','avenir next','avenir','segoe ui','helvetica neue','helvetica','Ubuntu','roboto','noto','arial','sans-serif'],
-    //   'mono': ['Menlo','Consolas','Monaco','Liberation Mono','Lucida Console','monospac'],
-    // },
     extend: {
       colors: {
+        'clr-btn': 'hsl(154, 59%, 51%)',
+        'clr-form-text-primary': 'hsl(249, 10%, 26%) ',
+        'clr-form-text-secondary': 'hsl(246, 25%, 77%)',
+        'clr-form-accent-primary': 'hsl(248, 32%, 49%)',
+        'clr-form-accent-secondary': 'hsl(0, 100%, 74%)',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

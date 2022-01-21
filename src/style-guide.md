@@ -11,17 +11,11 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-
-### Accent
-
-- Blue: hsl(248, 32%, 49%)
-
-### Neutral
-
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
+'clr-form-accent-secondary': 'hsl(0, 100%, 74%)'; 
+'clr-btn': 'hsl(154, 59%, 51%)';
+'clr-form-accent-primary': 'hsl(248, 32%, 49%)';
+'clr-form-text-primary': 'hsl(249, 10%, 26%) ';
+'clr-form-text-secondary': 'hsl(246, 25%, 77%)';
 
 ## Typography
 

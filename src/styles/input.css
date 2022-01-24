@@ -6,3 +6,12 @@
   margin-inline: auto;
   width: min(90%, 1200px);
 }
+
+@layer components {
+  .form-valid {
+    @apply border-slate-300 focus:border-clr-form-accent-primary focus:ring-clr-form-accent-primary;
+  }
+  .form-invalid {
+    @apply border-2 border-clr-form-accent-secondary focus:border-clr-form-accent-secondary focus:ring-clr-form-accent-secondary;
+  }
+}

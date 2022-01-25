@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <script type="module" src="./script.js"></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./output.css">
-  <script type="module" src="./script.js"></script>
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <body
+    class="text-white relative min-h-screen bg-clr-form-accent-secondary flex items-center justify-center"
+  >
+    <img
+      class="absolute top-0 left-0 w-full h-full object-cover object-center mix-blend-luminosity -z-10"
+      srcset="
+        ./images/bg-intro-mobile.png   768w,
+        ./images/bg-intro-desktop.png 1080w
+      "
+      sizes="100vw"
+      src="./images/bg-intro-desktop.png"
+      alt="background image"
+    />
 
-</head>
+    <div class="custom-container">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+        <header
+          class="text-center lg:text-left py-12 md:flex justify-center items-center"
+        >
+          <div>
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">
+              Learn to code by watching others
+            </h1>
+            <p class="font-semibold text-lg mt-6">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+        </header>
 
-<body class="text-white relative min-h-screen bg-clr-form-accent-secondary flex items-center justify-center">
+        <main class="py-4 text-center max-w-xl mx-auto">
+          <div class="bg-clr-form-accent-primary p-4 rounded-lg shadow-md">
+            <a class="" href="#"
+              ><span class="font-semibold">Try it free 7 days</span> then
+              $20/mo. thereafter</a
+            >
+          </div>
+          <div class="bg-white rounded-lg p-6 md:p-10 shadow-md my-6">
+            <form id="form" class="" action="#">
+              <div>
+                <input
+                  class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="First Name"
+                />
+                <div
+                  class="hidden text-clr-form-accent-secondary text-sm text-right italic mb-2 pr-1"
+                >
+                  First Name cannot be empty
+                </div>
+              </div>
 
-  <img class="absolute top-0 left-0 w-full h-full object-cover object-center mix-blend-luminosity -z-10"
-    srcset="./images/bg-intro-mobile.png 768w, ./images/bg-intro-desktop.png 1080w" sizes="100vw"
-    src="./images/bg-intro-desktop.png" alt="background image">
+              <div>
+                <input
+                  class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last Name"
+                />
+                <div
+                  class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1"
+                >
+                  Last Name cannot be empty
+                </div>
+              </div>
 
-  <div class="custom-container">
+              <div>
+                <input
+                  class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <div
+                  class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1"
+                >
+                  Looks like it is not an email
+                </div>
+              </div>
 
-    <div class="lg:grid lg:grid-cols-2 lg:gap-16">
-      <header class="text-center lg:text-left py-12 md:flex justify-center items-center">
-        <div>
-          <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Learn to code by watching others</h1>
-          <p class="font-semibold text-lg mt-6">See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think is invaluable. </p>
-        </div>
-      </header>
+              <div>
+                <input
+                  class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <div
+                  class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1"
+                >
+                  Password cannot be empty
+                </div>
+              </div>
 
-      <main class="py-4 text-center max-w-xl mx-auto">
-        <div class="bg-clr-form-accent-primary p-4 rounded-lg shadow-md">
-          <a class="" href="#"><span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter</a>
-        </div>
-        <div class="bg-white rounded-lg p-6 md:p-10 shadow-md my-6">
-          <form id="form" class="" action="#">
+              <button
+                class="my-2 uppercase font-bold py-4 px-2 bg-clr-btn w-full shadow-md rounded-md hover:opacity-80 focus:opacity-80 focus:outline-none focus:ring focus:ring-clr-btn focus:ring-offset-2"
+                id="btn-submit"
+              >
+                Claim your free trial
+              </button>
+            </form>
+            <p class="text-neutral-400 font-semibold text-sm my-2">
+              By clicking the button, you are agreeing to our
+              <span class="text-clr-form-accent-secondary"
+                >Terms and Services</span
+              >
+            </p>
+          </div>
+        </main>
+      </div>
 
-            <div>
-              <input
-                class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
-                type="text" name="first-name" id="first-name" placeholder="First Name">
-              <div class="hidden text-clr-form-accent-secondary text-sm text-right italic mb-2 pr-1">First Name cannot
-                be empty</div>
-            </div>
-
-            <div>
-              <input
-                class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
-                type="text" name="last-name" id="last-name" placeholder="Last Name">
-              <div class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1">Last Name cannot be
-                empty</div>
-            </div>
-
-            <div>
-              <input
-                class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
-                type="email" name="email" id="email" placeholder="Email Address">
-              <div class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1">Looks like it is
-                not an email</div>
-            </div>
-
-            <div>
-              <input
-                class="font-semibold text-clr-form-text-primary px-5 py-4 my-2 w-full rounded shadow-sm focus:outline-none form-valid"
-                type="password" name="password" id="password" placeholder="Password">
-              <div class="hidden text-clr-form-accent-secondary text-right italic text-sm mb-2 pr-1">Password cannot be
-                empty</div>
-            </div>
-
-            <button
-              class="my-2 uppercase font-bold py-4 px-2 bg-clr-btn w-full shadow-md rounded-md hover:opacity-80 focus:opacity-80 focus:outline-none focus:ring focus:ring-clr-btn focus:ring-offset-2"
-              id="btn-submit">Claim your free trial </button>
-          </form>
-          <p class="text-neutral-400 font-semibold text-sm my-2">By clicking the button, you are agreeing to our <span
-              class="text-clr-form-accent-secondary">Terms and Services</span></p>
-        </div>
-      </main>
+      <footer>
+        <p class="attribution text-center">
+          Challenge by
+          <a
+            class="text-clr-form-accent-primary hover:opacity-80 focus:opacity-80"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="text-clr-form-accent-primary hover:opacity-80 focus:opacity-80"
+            href="https://www.frontendmentor.io/profile/Pratik280"
+            target="_blank"
+            >@Pratik280</a
+          >.
+        </p>
+      </footer>
     </div>
-
-    <footer>
-      <p class="attribution text-center">
-        Challenge by <a class="text-clr-form-accent-primary hover:opacity-80 focus:opacity-80"
-          href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a class="text-clr-form-accent-primary hover:opacity-80 focus:opacity-80"
-          href="https://www.frontendmentor.io/profile/Pratik280" target="_blank">@Pratik280</a>.
-      </p>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>

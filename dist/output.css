@@ -646,19 +646,6 @@ select {
   --tw-ring-color: hsl(248 32% 49% / var(--tw-ring-opacity));
 }
 
-.form-invalid {
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: hsl(0 100% 74% / var(--tw-border-opacity));
-}
-
-.form-invalid:focus {
-  --tw-border-opacity: 1;
-  border-color: hsl(0 100% 74% / var(--tw-border-opacity));
-  --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(0 100% 74% / var(--tw-ring-opacity));
-}
-
 .absolute {
   position: absolute;
 }
